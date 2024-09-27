@@ -3,6 +3,7 @@ import pytest
 from src.arrays.contains_duplicate import Solution
 
 
+# fmt: off
 @pytest.mark.parametrize(
     "nums, expected",
     [
@@ -12,7 +13,7 @@ from src.arrays.contains_duplicate import Solution
         ([], False),  # Empty array, no duplicates
         ([1], False),  # Single element, no duplicates
         ([1, 2, 3, 4, 5, 6, 7, 8, 9], False),  # No duplicates in a long list
-        ([100000, 200000, 300000, 100000],True),  # Duplicates in large numbers
+        ([1000000, 2000000, 3000000, 1000000], True),  # Duplicates in large numbers # noqa
         ([-1, -2, -3, -1], True),  # Negative number duplicates
         ([-1, -2, -3, -4], False),  # Negative numbers, no duplicates
         ([0, 0, 1], True),  # Duplicates with zero
@@ -21,5 +22,6 @@ from src.arrays.contains_duplicate import Solution
         ([-(2**31), -(2**31)], True),  # Minimum int value, duplicate
     ],
 )
+# fmt: on
 def test_contains_duplicate(nums, expected):
     assert Solution().containsDuplicate(nums) == expected
