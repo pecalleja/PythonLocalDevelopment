@@ -1,7 +1,9 @@
-# Python Local Development
+# Python Local Development 🐍
 
 This is a Sandbox environment to practice my Python skills. I'm following the NeetCode roadmap.
 
+
+### NeetCode roadmap
 The NeetCode roadmap is a super useful guide designed to help you master coding interviews. It lays out a clear,
 step-by-step plan to learn important data structures and algorithms, starting from beginner-friendly concepts and
 working up to more advanced ones. The idea is to give you a structured path to follow, with curated problems from
@@ -43,8 +45,8 @@ graph TD
 
 ### Arrays & Hashing
 
-| Problem                                                                                    | Difficulty | Local Code Link                                                           |
-|--------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------|
+| Problem                                                                                    | Difficulty | Python Module                                                                 |
+|--------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------|
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate)                     | Easy       | [contains_duplicate.py](src/arrays/contains_duplicate.py)                     |
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram)                               | Easy       | [valid_anagram.py](src/arrays/valid_anagram.py)                               |
 | [Two Sum](https://leetcode.com/problems/two-sum)                                           | Easy       | [two_sum.py](src/arrays/two_sum.py)                                           |
@@ -57,8 +59,8 @@ graph TD
 
 ### Stack
 
-| Problem                                                                                            | Difficulty | Local Code Link                                                                   |
-|----------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------|
+| Problem                                                                                            | Difficulty | Python Module                                                                         |
+|----------------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------|
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)                               | Easy       | [valid_parentheses.py](src/stacks/valid_parentheses.py)                               |
 | [Min Stack](https://leetcode.com/problems/min-stack)                                               | Medium     | [min_stack.py](src/stacks/min_stack.py)                                               |
 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Medium     | [evaluate_reverse_polish_notation.py](src/stacks/evaluate_reverse_polish_notation.py) |
