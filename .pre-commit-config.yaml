@@ -1,0 +1,46 @@
+repos:
+-   repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+    - id: black
+      language_version: python3.11
+      args: # arguments to configure black
+          - --line-length=79
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.1.1
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-ast
+    -   id: check-builtin-literals
+    -   id: check-docstring-first
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-yaml
+        args: [--unsafe]
+    -   id: debug-statements
+    -   id: fix-encoding-pragma
+        args: [--remove]
+-   repo: https://github.com/asottile/reorder_python_imports
+    rev: v3.13.0
+    hooks:
+    -   id: reorder-python-imports
+-   repo: https://github.com/PyCQA/bandit
+    rev: 1.7.10
+    hooks:
+    - id: bandit
+      args: [-s, "B101,B311,B303,B105,B310,B608"]
+-   repo: local
+    hooks:
+    -   id: update-requirements-txt
+        name: update-requirements-txt
+        description: 'Generate requirements.txt based on poetry.lock'
+        entry: poetry-requirements.sh
+        language: script
+        pass_filenames: false
+default_language_version:
+    python: python3.11
