@@ -12,7 +12,7 @@ from src.arrays.contains_duplicate import Solution
         ([], False),  # Empty array, no duplicates
         ([1], False),  # Single element, no duplicates
         ([1, 2, 3, 4, 5, 6, 7, 8, 9], False),  # No duplicates in a long list
-        ([100000, 200000, 300000, 100000], True),  # Duplicates in large numbers
+        ([100000, 200000, 300000, 100000],True),  # Duplicates in large numbers
         ([-1, -2, -3, -1], True),  # Negative number duplicates
         ([-1, -2, -3, -4], False),  # Negative numbers, no duplicates
         ([0, 0, 1], True),  # Duplicates with zero
