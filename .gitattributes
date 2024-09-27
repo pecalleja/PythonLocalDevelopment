@@ -1,2 +1,2 @@
-*.python linguist-detectable=true
+*.py linguist-detectable=true
 *.sh linguist-detectable=false
