@@ -40,6 +40,8 @@ def build_tree_from_list(values):
         ([1, None, 2, None, 3], 3),  # Right-skewed tree: 1 -> 2 -> 3
         ([1, 2, 3, 4, 5], 3),  # Balanced tree: Depth is 3
         ([1, 2, None, 3, None, None, 4], 4),  # Unbalanced tree: Depth is 4
+        ([3, 9, 20, None, None, 15, 7], 3),
+        ([1, None, 2], 2),
     ],
 )
 def test_maxDepth(tree_array, expected):
