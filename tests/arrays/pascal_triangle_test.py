@@ -25,3 +25,28 @@ from src.arrays.pascal_triangle import Solution
 # fmt: on
 def test_get_row(row_index, expected):
     assert Solution().getRow(row_index) == expected
+
+
+@pytest.mark.parametrize(
+    "num_rows, expected",
+    [
+        (1, [[1]]),
+        (2, [[1], [1, 1]]),
+        (3, [[1], [1, 1], [1, 2, 1]]),
+        (4, [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1]]),
+        (5, [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]),
+        (
+            6,
+            [
+                [1],
+                [1, 1],
+                [1, 2, 1],
+                [1, 3, 3, 1],
+                [1, 4, 6, 4, 1],
+                [1, 5, 10, 10, 5, 1],
+            ],
+        ),
+    ],
+)
+def test_generate_triangle(num_rows, expected):
+    assert Solution().generate(num_rows) == expected

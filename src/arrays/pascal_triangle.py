@@ -10,3 +10,9 @@ class Solution:
             value = last_element * position
             ans.append(value // i)
         return ans
+
+    def generate(self, numRows: int) -> List[List[int]]:
+        ans = []
+        for i in range(numRows):
+            ans.append(self.getRow(i))
+        return ans
