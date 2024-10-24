@@ -35,15 +35,15 @@ def build_tree_from_list():
 
 @pytest.fixture
 def build_linked_list():
-    def wrapper(nums):
+    def wrapper(nums, pos=None):
         if not nums:
             return None
-        head = ListNode(nums[0])
-        current = head
-        for num in nums[1:]:
-            current.next = ListNode(num)
-            current = current.next
-        return head
+        nodes = [ListNode(v) for v in nums]
+        for i in range(len(nodes) - 1):
+            nodes[i].next = nodes[i + 1]
+        if pos is not None:
+            nodes[-1].next = nodes[pos]
+        return nodes[0]
 
     return wrapper
 
