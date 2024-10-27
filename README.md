@@ -67,4 +67,4 @@ graph TD
 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses)                         | Medium     | [generate_parentheses.py](src/stacks/generate_parentheses.py)                         |
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures)                             | Medium     | [daily_temperatures.py](src/stacks/daily_temperatures.py)                             |
 | [Car Fleet](https://leetcode.com/problems/car-fleet)                                               | Medium     | [car_fleet.py](src/stacks/car_fleet.py)                                               |
-| [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)     | Hard       | [largest_rectangle_in_histogram.py](src/stacks/largest_rectangle_in_histogram.py)     |
+| [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)     | Hard       | [largest_rectangle.py](src/stacks/largest_rectangle.py)                               |
