@@ -1,6 +1,6 @@
 import pytest
 
-from src.arrays.buy_sell import Solution
+from src.slidingwindow.buy_sell import Solution
 
 
 @pytest.mark.parametrize(

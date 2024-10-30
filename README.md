@@ -92,6 +92,19 @@ graph TD
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store)                     | Medium     | [time_based_key_value_store.py](src/binarysearch/time_based_key_value_store.py)             |
 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)                   | Hard       | [median_of_two_sorted_arrays.py](src/binarysearch/median_of_two_sorted_arrays.py)           |
 
+
+### Sliding Window
+
+| Problem                                                                                                                        | Difficulty | Local Code Link                                                                                                          |
+|--------------------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------|
+| [Best Time to Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)                               | Easy       | [buy_sell.py](src/slidingwindow/buy_sell.py)                                                                             |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium     | [longest_substring_without_repeating_characters.py](src/slidingwindow/longest_substring_without_repeating_characters.py) |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)               | Medium     | [longest_repeating_character_replacement.py](src/slidingwindow/longest_repeating_character_replacement.py)               |
+| [Permutation In String](https://leetcode.com/problems/permutation-in-string)                                                   | Medium     | [permutation_in_string.py](src/slidingwindow/permutation_in_string.py)                                                   |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)                                             | Hard       | [minimum_window_substring.py](src/slidingwindow/minimum_window_substring.py)                                             |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)                                                 | Hard       | [sliding_window_maximum.py](src/slidingwindow/sliding_window_maximum.py)                                                 |
+
+
 ### Linked List
 
 | Problem                                                                                            | Difficulty | Local Code Link                                                                            |
