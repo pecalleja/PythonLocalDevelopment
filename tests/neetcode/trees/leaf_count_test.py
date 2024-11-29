@@ -15,11 +15,11 @@ from src.neetcode.trees.leaf_count import Solution
         ([1, 2, 3, None, 4, None, 5], 2),
     ],
 )
-def test_countLeaves(build_tree_from_list, lst, expected):
+def test_countLeaves(list_to_tree, lst, expected):
     solution = Solution()
 
     # Build tree from list
-    root = build_tree_from_list(lst)
+    root = list_to_tree(lst)
 
     # Test the countLeaves function
     result = solution.countLeaves(root)

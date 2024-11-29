@@ -15,10 +15,10 @@ from src.neetcode.linkedlists.reorder_list import Solution
     ],
 )
 def test_reorderList(
-    linked_list_to_list, build_linked_list, input_list, expected_list
+    linkedlist_to_list, list_to_linkedlist, input_list, expected_list
 ):
     solution = Solution()
-    head = build_linked_list(input_list)
+    head = list_to_linkedlist(input_list)
     solution.reorderList(head)
-    result = linked_list_to_list(head)
+    result = linkedlist_to_list(head)
     assert result == expected_list

@@ -13,7 +13,7 @@ from src.neetcode.trees.postorder_traversal import Solution
         ([1, None, 2, None, 3], [3, 2, 1]),
     ],
 )
-def test_postorderTraversal(build_tree_from_list, values, expected):
+def test_postorderTraversal(list_to_tree, values, expected):
     sol = Solution()
-    root = build_tree_from_list(values)
+    root = list_to_tree(values)
     assert sol.postorderTraversal(root) == expected

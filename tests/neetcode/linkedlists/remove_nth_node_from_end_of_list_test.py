@@ -15,10 +15,10 @@ from src.neetcode.linkedlists.remove_nth_node_from_end_of_list import Solution
     ],
 )
 def test_removeNthFromEnd(
-    build_linked_list, linked_list_to_list, input_list, n, expected_list
+    list_to_linkedlist, linkedlist_to_list, input_list, n, expected_list
 ):
     solution = Solution()
-    head = build_linked_list(input_list)
+    head = list_to_linkedlist(input_list)
     updated_head = solution.removeNthFromEnd(head, n)
-    result = linked_list_to_list(updated_head)
+    result = linkedlist_to_list(updated_head)
     assert result == expected_list

@@ -16,12 +16,12 @@ from src.neetcode.trees.same_tree import Solution
         ([1, 2], [1, None, None], False),
     ],
 )
-def test_isSameTree(build_tree_from_list, p_list, q_list, expected):
+def test_isSameTree(list_to_tree, p_list, q_list, expected):
     solution = Solution()
 
     # Build trees p and q from lists
-    p = build_tree_from_list(p_list)
-    q = build_tree_from_list(q_list)
+    p = list_to_tree(p_list)
+    q = list_to_tree(q_list)
 
     # Test the isSameTree function
     result = solution.isSameTree(p, q)

@@ -16,7 +16,7 @@ from src.neetcode.trees.path_sum import Solution
         ([1], 1, True),
     ],
 )
-def test_hasPathSum(build_tree_from_list, lst, target_sum, expected):
+def test_hasPathSum(list_to_tree, lst, target_sum, expected):
     solution = Solution()
-    root = build_tree_from_list(lst)
+    root = list_to_tree(lst)
     assert solution.hasPathSum(root, target_sum) == expected

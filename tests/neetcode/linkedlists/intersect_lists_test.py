@@ -33,11 +33,11 @@ def create_intersection(headA, headB, intersect_val):
     ],
 )
 def test_getIntersectionNode(
-    build_linked_list, listA, listB, intersect_val, expected
+    list_to_linkedlist, listA, listB, intersect_val, expected
 ):
     sol = Solution()
-    headA = build_linked_list(listA)
-    headB = build_linked_list(listB)
+    headA = list_to_linkedlist(listA)
+    headB = list_to_linkedlist(listB)
     if intersect_val is not None:
         create_intersection(headA, headB, intersect_val)
     result = sol.getIntersectionNode(headA, headB)

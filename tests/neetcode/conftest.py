@@ -7,7 +7,7 @@ from src.neetcode.trees import TreeNode
 
 
 @pytest.fixture
-def build_tree_from_list():
+def list_to_tree():
     def wrapper(values):
         if not values:
             return None
@@ -34,7 +34,7 @@ def build_tree_from_list():
 
 
 @pytest.fixture
-def build_linked_list():
+def list_to_linkedlist():
     def wrapper(nums, pos=None):
         if not nums:
             return None
@@ -49,7 +49,7 @@ def build_linked_list():
 
 
 @pytest.fixture
-def linked_list_to_list():
+def linkedlist_to_list():
     def wrapper(head):
         result = []
         current = head

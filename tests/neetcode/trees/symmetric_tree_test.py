@@ -15,8 +15,8 @@ from src.neetcode.trees.symmetric_tree import Solution
         ([1, 2, 2, 3, None, None, 4], False),
     ],
 )
-def test_isSymmetric(build_tree_from_list, lst, expected):
+def test_isSymmetric(list_to_tree, lst, expected):
     solution = Solution()
-    root = build_tree_from_list(lst)
+    root = list_to_tree(lst)
     result = solution.isSymmetric(root)
     assert result == expected

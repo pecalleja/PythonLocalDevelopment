@@ -14,8 +14,8 @@ from src.neetcode.trees.inorder_traversal import Solution
         ([1, None, 2], [1, 2]),
     ],
 )
-def test_inorderTraversal(build_tree_from_list, lst, expected):
+def test_inorderTraversal(list_to_tree, lst, expected):
     solution = Solution()
-    root = build_tree_from_list(lst)
+    root = list_to_tree(lst)
     result = solution.inorderTraversal(root)
     assert result == expected

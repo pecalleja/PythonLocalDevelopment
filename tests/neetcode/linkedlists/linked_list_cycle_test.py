@@ -21,7 +21,7 @@ from src.neetcode.linkedlists.linked_list_cycle import Solution
         ([1, 2, 3, 4], None, False),  # Multiple nodes, no cycle
     ],
 )
-def test_hasCycle(build_linked_list, values, pos, expected):
+def test_hasCycle(list_to_linkedlist, values, pos, expected):
     sol = Solution()
-    head = build_linked_list(values, pos)
+    head = list_to_linkedlist(values, pos)
     assert sol.hasCycle(head) == expected

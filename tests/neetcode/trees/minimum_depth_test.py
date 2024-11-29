@@ -14,11 +14,11 @@ from src.neetcode.trees.minimum_depth import Solution
         ([1, 2], 2),
     ],
 )
-def test_minDepth(build_tree_from_list, lst, expected):
+def test_minDepth(list_to_tree, lst, expected):
     solution = Solution()
 
     # Build tree from list
-    root = build_tree_from_list(lst)
+    root = list_to_tree(lst)
 
     # Test the minDepth function
     result = solution.minDepth(root)

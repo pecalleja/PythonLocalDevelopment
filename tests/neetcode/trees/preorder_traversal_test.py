@@ -13,7 +13,7 @@ from src.neetcode.trees.preorder_traversal import Solution
         ([1, None, 2, None, 3], [1, 2, 3]),
     ],
 )
-def test_preorderTraversal(build_tree_from_list, values, expected):
+def test_preorderTraversal(list_to_tree, values, expected):
     sol = Solution()
-    root = build_tree_from_list(values)
+    root = list_to_tree(values)
     assert sol.preorderTraversal(root) == expected

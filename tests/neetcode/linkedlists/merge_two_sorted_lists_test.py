@@ -21,17 +21,17 @@ from src.neetcode.linkedlists.merge_two_sorted_lists import Solution
     ],
 )
 def test_mergeTwoLists(
-    build_linked_list, linked_list_to_list, list1, list2, expected
+    list_to_linkedlist, linkedlist_to_list, list1, list2, expected
 ):
     solution = Solution()
-    l1 = build_linked_list(list1)
-    l2 = build_linked_list(list2)
+    l1 = list_to_linkedlist(list1)
+    l2 = list_to_linkedlist(list2)
 
     # Merge the two sorted lists
     merged_head = solution.mergeTwoLists(l1, l2)
 
     # Convert the merged linked list back to a Python list
-    result = linked_list_to_list(merged_head)
+    result = linkedlist_to_list(merged_head)
 
     # Assert the result is as expected
     assert result == expected

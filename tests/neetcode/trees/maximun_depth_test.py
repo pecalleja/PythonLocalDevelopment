@@ -16,7 +16,7 @@ from src.neetcode.trees.maximun_depth import Solution
         ([1, None, 2], 2),
     ],
 )
-def test_maxDepth(build_tree_from_list, tree_array, expected):
-    root = build_tree_from_list(tree_array)
+def test_maxDepth(list_to_tree, tree_array, expected):
+    root = list_to_tree(tree_array)
     solution = Solution()
     assert solution.maxDepth(root) == expected

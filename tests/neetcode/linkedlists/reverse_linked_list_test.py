@@ -14,10 +14,10 @@ from src.neetcode.linkedlists.reverse_linked_list import Solution
     ],
 )
 def test_reverseList(
-    build_linked_list, linked_list_to_list, input_list, expected_list
+    list_to_linkedlist, linkedlist_to_list, input_list, expected_list
 ):
     sol = Solution()
-    head = build_linked_list(input_list)
+    head = list_to_linkedlist(input_list)
     reversed_head = sol.reverseList(head)
-    result_list = linked_list_to_list(reversed_head)
+    result_list = linkedlist_to_list(reversed_head)
     assert result_list == expected_list

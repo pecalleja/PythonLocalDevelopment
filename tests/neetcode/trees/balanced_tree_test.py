@@ -14,8 +14,8 @@ from src.neetcode.trees.balanced_tree import Solution
         ([1, 2, 2, 3, None, None, 3], True),
     ],
 )
-def test_isBalanced(build_tree_from_list, lst, expected):
+def test_isBalanced(list_to_tree, lst, expected):
     solution = Solution()
-    root = build_tree_from_list(lst)
+    root = list_to_tree(lst)
     result = solution.isBalanced(root)
     assert result == expected

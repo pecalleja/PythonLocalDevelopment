@@ -14,10 +14,10 @@ from src.neetcode.linkedlists.add_two_numbers import Solution
     ],
 )
 def test_add_two_numbers(
-    build_linked_list, linked_list_to_list, l1, l2, expected
+    list_to_linkedlist, linkedlist_to_list, l1, l2, expected
 ):
-    l1_list = build_linked_list(l1)
-    l2_list = build_linked_list(l2)
+    l1_list = list_to_linkedlist(l1)
+    l2_list = list_to_linkedlist(l2)
     solution = Solution()
     result = solution.addTwoNumbers(l1_list, l2_list)
-    assert linked_list_to_list(result) == expected
+    assert linkedlist_to_list(result) == expected
