@@ -1,6 +1,6 @@
 import pytest
 
-from src.neetcode.trees.maximun_depth import Solution
+from src.neetcode.trees.maximum_depth import Solution
 
 
 @pytest.mark.parametrize(
