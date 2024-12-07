@@ -1,7 +1,7 @@
 from heapq import heappop
 from heapq import heappush
 
-from src.neetcode.linkedlists import ListNode
+from src.common import ListNode
 
 
 class Solution:

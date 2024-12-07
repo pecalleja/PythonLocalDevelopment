@@ -1,4 +1,4 @@
-from src.neetcode.linkedlists import ListNode
+from src.common import ListNode
 
 
 class Solution:

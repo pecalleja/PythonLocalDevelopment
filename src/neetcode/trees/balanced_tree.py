@@ -1,6 +1,6 @@
 from typing import Optional
 
-from src.neetcode.trees import TreeNode
+from src.common import TreeNode
 
 
 class Solution:
