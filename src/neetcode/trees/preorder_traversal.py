@@ -8,12 +8,12 @@ class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
 
-        def inorder(node):
+        def preorder(node):
             if not node:
                 return
             result.append(node.val)  # Visit root
-            inorder(node.left)  # Traverse left subtree
-            inorder(node.right)  # Traverse right subtree
+            preorder(node.left)  # Traverse left subtree
+            preorder(node.right)  # Traverse right subtree
 
-        inorder(root)
+        preorder(root)
         return result
