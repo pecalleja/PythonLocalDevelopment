@@ -1,4 +1,8 @@
 repos:
+-   repo: https://github.com/asottile/reorder_python_imports
+    rev: v3.14.0
+    hooks:
+    -   id: reorder-python-imports
 -   repo: https://github.com/psf/black
     rev: 24.10.0
     hooks:
@@ -25,12 +29,8 @@ repos:
     -   id: debug-statements
     -   id: fix-encoding-pragma
         args: [--remove]
--   repo: https://github.com/asottile/reorder_python_imports
-    rev: v3.14.0
-    hooks:
-    -   id: reorder-python-imports
 -   repo: https://github.com/PyCQA/bandit
-    rev: 1.7.10
+    rev: 1.8.0
     hooks:
     - id: bandit
       args: [-s, "B101,B311,B303,B105,B310,B608"]
