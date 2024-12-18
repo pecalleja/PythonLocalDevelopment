@@ -1,14 +1,12 @@
 class Solution:
-    def climbStairs(self, x: int) -> int:
-        cache = {}
+    def climbStairs(self, n: int) -> int:
+        if n == 0 or n == 1:
+            return 1
 
-        def recursive_steps(n):
-            if n in cache:
-                return cache[n]
-            if n < 4:
-                return n
-            ans = recursive_steps(n - 1) + recursive_steps(n - 2)
-            cache[n] = ans
-            return ans
+        first, second = 1, 1
+        for _ in range(2, n + 1):
+            third = first + second
+            first = second
+            second = third
 
-        return recursive_steps(x)
+        return second
