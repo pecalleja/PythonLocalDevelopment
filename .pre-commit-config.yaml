@@ -3,21 +3,24 @@ repos:
     rev: 24.10.0
     hooks:
     - id: black
-      language_version: python3.11
+      name: Formatting code with black
 -   repo: https://github.com/PyCQA/isort
     rev: 5.13.2
     hooks:
       - id: isort
-        language_version: python3
+        name: Sorting imports with isort
 -   repo: https://github.com/PyCQA/flake8
     rev: 7.1.1
     hooks:
     -   id: flake8
+        name: Linting code with flake8
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
     -   id: trailing-whitespace
+        name: Trailing whitespace checker
     -   id: end-of-file-fixer
+        name: End of file fixer
     -   id: check-ast
     -   id: check-builtin-literals
     -   id: check-docstring-first
@@ -26,13 +29,13 @@ repos:
     -   id: check-yaml
         args: [--unsafe]
     -   id: debug-statements
-    -   id: fix-encoding-pragma
-        args: [--remove]
+        name: check debug statements
 -   repo: https://github.com/PyCQA/bandit
     rev: 1.8.0
     hooks:
     - id: bandit
       args: [-s, "B101,B311,B303,B105,B310,B608"]
+      name: Static security analysis with bandit
 -   repo: local
     hooks:
     -   id: update-requirements-txt
