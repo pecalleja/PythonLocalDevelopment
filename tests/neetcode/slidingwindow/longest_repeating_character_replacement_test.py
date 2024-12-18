@@ -1,7 +1,10 @@
 # fmt: off
 import pytest
 
-from src.neetcode.slidingwindow.longest_repeating_character_replacement import Solution  # noqa
+from src.neetcode.slidingwindow.longest_repeating_character_replacement import (  # noqa
+    Solution,
+)
+
 # fmt: on
 
 

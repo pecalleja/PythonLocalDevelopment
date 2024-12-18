@@ -1,4 +1,3 @@
-# fmt: off
 """
 Removing Duplicates from an Unsorted Linked List
 
@@ -15,8 +14,8 @@ instance, for the given linked list
 you should return
 1 -> 3 -> 2 -> 4 -> 5
 """
+
 from src.common import ListNode
-# fmt: on
 
 
 def solution(head):

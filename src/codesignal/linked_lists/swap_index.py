@@ -1,4 +1,3 @@
-# fmt: off
 """
 Swapping Nodes in a Singly Linked List at Given Indices
 
@@ -19,8 +18,8 @@ indices 1 and 3 would be:
 The expected time complexity of your solution should be
 O(n), where n is the length of the linked list.
 """
+
 from src.common import ListNode
-# fmt: on
 
 
 def solution(head, start, end):

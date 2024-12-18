@@ -1,7 +1,10 @@
 # fmt: off
 import pytest
 
-from src.neetcode.slidingwindow.longest_substring_without_repeating_characters import Solution  # noqa
+from src.neetcode.slidingwindow.longest_substring_without_repeating_characters import (  # noqa
+    Solution,
+)
+
 # fmt: on
 
 

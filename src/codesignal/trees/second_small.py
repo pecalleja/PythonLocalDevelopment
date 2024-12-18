@@ -1,4 +1,3 @@
-# fmt: off
 """
 Finding the Second-Smallest Node in a Binary Tree
 
@@ -16,10 +15,10 @@ have discussed in the lesson.
 Expected complexity is O(n), where n is the number of vertices in the binary
 tree. The expected additional memory is O(1).
 """
+
 from typing import Optional
 
 from src.common import TreeNode
-# fmt: on
 
 
 def solution(root: TreeNode) -> Optional[TreeNode]:

@@ -1,7 +1,9 @@
 import pytest
 
-from src.neetcode.linkedlists.copy_list_with_random_pointer import Node
-from src.neetcode.linkedlists.copy_list_with_random_pointer import Solution
+from src.neetcode.linkedlists.copy_list_with_random_pointer import (  # noqa: F401, E501
+    Node,
+    Solution,
+)
 
 
 def list_to_linked_list_with_random(nodes):

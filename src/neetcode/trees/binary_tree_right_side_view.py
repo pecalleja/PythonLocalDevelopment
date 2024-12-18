@@ -1,6 +1,5 @@
 from collections import deque
-from typing import List
-from typing import Optional
+from typing import List, Optional
 
 from src.common import TreeNode
 

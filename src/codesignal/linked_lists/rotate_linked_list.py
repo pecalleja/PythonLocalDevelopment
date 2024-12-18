@@ -1,4 +1,3 @@
-# fmt: off
 """
 Rotating a Singly Linked List to the Right
 
@@ -16,8 +15,8 @@ rotation, it should become 4 -> 5 -> 1 -> 2 -> 3.
 
 The expected time complexity for your solution is O(n).
 """
+
 from src.common import ListNode
-# fmt: on
 
 
 def solution(head: ListNode, k: int) -> ListNode:

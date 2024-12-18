@@ -2,8 +2,7 @@ from collections import deque
 
 import pytest
 
-from src.common import ListNode
-from src.common import TreeNode
+from src.common import ListNode, TreeNode
 
 
 @pytest.fixture

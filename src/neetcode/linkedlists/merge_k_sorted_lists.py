@@ -1,5 +1,4 @@
-from heapq import heappop
-from heapq import heappush
+from heapq import heappop, heappush
 
 from src.common import ListNode
 

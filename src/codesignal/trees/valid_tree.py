@@ -1,4 +1,3 @@
-# fmt: off
 """
 Binary Search Tree Verification
 
@@ -13,8 +12,8 @@ The expected time complexity of your solution is O(n), where n is the number
 of nodes in the binary tree. Make sure to implement the solution that goes
 through every tree's node only once.
 """
+
 from src.common import TreeNode
-# fmt: on
 
 
 def solution(root: TreeNode) -> bool:

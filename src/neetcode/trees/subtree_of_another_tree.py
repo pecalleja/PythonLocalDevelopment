@@ -1,5 +1,6 @@
-from .same_tree import Solution
 from src.common import TreeNode
+
+from .same_tree import Solution
 
 
 class Solution(Solution):
