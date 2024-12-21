@@ -1,4 +1,6 @@
 """
+https://leetcode.com/problems/validate-binary-search-tree/description/
+
 Binary Search Tree Verification
 
 Your task is to implement a function is_binary_search_tree(root) that takes
