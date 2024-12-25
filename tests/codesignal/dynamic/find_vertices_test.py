@@ -1,6 +1,6 @@
 import pytest
 
-from src.codesignal.trees.find_vertices import solution
+from src.codesignal.dynamic.find_vertices import solution
 
 
 @pytest.mark.parametrize(

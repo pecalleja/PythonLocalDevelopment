@@ -1,6 +1,6 @@
 import pytest
 
-from src.codesignal.trees.shortest_distance import solution
+from src.codesignal.dynamic.shortest_distance import solution
 
 
 @pytest.mark.parametrize(

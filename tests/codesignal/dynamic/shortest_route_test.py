@@ -1,6 +1,6 @@
 import pytest
 
-from src.codesignal.trees.shortest_route import solution
+from src.codesignal.dynamic.shortest_route import solution
 
 
 @pytest.mark.parametrize(
