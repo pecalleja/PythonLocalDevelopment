@@ -81,3 +81,14 @@ def linkedlist_to_list():
         return result
 
     return wrapper
+
+
+@pytest.fixture
+def serialize_to_list():
+    def wrapper(serialized):
+        return [
+            None if val in ["null", None] else int(val)
+            for val in serialized.split(",")
+        ]
+
+    return wrapper
