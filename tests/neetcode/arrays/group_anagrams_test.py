@@ -8,7 +8,7 @@ from src.neetcode.arrays.group_anagrams import Solution
     [
         (
             ["eat", "tea", "tan", "ate", "nat", "bat"],
-            [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]],
+            [["bat"], ["ate", "eat", "tea"], ["tan", "nat"]],
         ),  # Example 1
         ([""], [[""]]),  # Edge case: empty string
         (["a"], [["a"]]),  # Single character
