@@ -7,18 +7,15 @@ class Solution:
     ) -> List[List[int]]:
         def backtrack(start, target, path):
             if target == 0:
-                result.append(list(path))
+                result.append(path[:])
                 return
             if target < 0:
                 return
 
             for i in range(start, len(candidates)):
-                # Include candidates[i] in the combination and reduce target
                 path.append(candidates[i])
-                backtrack(
-                    i, target - candidates[i], path
-                )  # 'i' allows reuse of the same number
-                path.pop()  # Backtrack
+                backtrack(i, target - candidates[i], path)
+                path.pop()
 
         result = []
         backtrack(0, target, [])
