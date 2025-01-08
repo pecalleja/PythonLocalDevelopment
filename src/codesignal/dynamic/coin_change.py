@@ -18,17 +18,10 @@ The expected time complexity of your solution is O(amount×len(coins).
 """
 
 
-def solution(coins, amount):
-    # Create a list to store the number of ways to make change for each amount
-    dp = [0] * (amount + 1)
-    dp[0] = 1
-
-    # Iterate through the coins
+def solution(coins, target_amount):
+    ways_to_make_change = [0] * (target_amount + 1)
+    ways_to_make_change[0] = 1
     for coin in coins:
-        # For each coin, iterate through the amounts
-        for i in range(coin, amount + 1):
-            # Update the number of ways to make change
-            dp[i] += dp[i - coin]
-
-    # Return the number of ways to make change for the target amount
-    return dp[amount]
+        for amount in range(coin, target_amount + 1):
+            ways_to_make_change[amount] += ways_to_make_change[amount - coin]
+    return ways_to_make_change[target_amount]
