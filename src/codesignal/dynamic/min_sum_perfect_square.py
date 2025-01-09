@@ -16,20 +16,9 @@ The expected time complexity for this algorithm is O(n⋅sqrt(n)).
 
 
 def solution(n):
-    # Create a list to store the number of perfect squares that sum up to each
-    # number from 0 to n
-    dp = [0] * (n + 1)
-
-    # Iterate through the numbers from 1 to n
+    min_squares = [0] * (n + 1)
     for i in range(1, n + 1):
-        # Initialize the minimum number of perfect squares to the maximum
-        # possible value
-        dp[i] = i
-
-        # Iterate through the perfect squares less than or equal to i
+        min_squares[i] = i
         for j in range(1, int(i**0.5) + 1):
-            # Update the minimum number of perfect squares
-            dp[i] = min(dp[i], dp[i - j * j] + 1)
-
-    # Return the minimum number of perfect squares that sum up to n
-    return dp[n]
+            min_squares[i] = min(min_squares[i], min_squares[i - j * j] + 1)
+    return min_squares[n]
