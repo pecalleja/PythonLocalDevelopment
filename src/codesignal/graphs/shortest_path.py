@@ -1,3 +1,23 @@
+"""
+Logistics Shortest Path Finder
+
+Your task is to write a Python function
+
+shortest_path(grid, source, destination)
+
+that takes a given grid of size n×n, a start cell, and a destination cell and
+determines the shortest path using Dijkstra’s Algorithm. The function should
+return the length of the shortest path and the path itself.
+
+The grid is given as a 2D list of booleans representing the intersections.
+True means that there is an intersection, and False means that the
+intersection is blocked. From any intersection, it is possible to move to any
+directly neighboring intersection (top, bottom, left, or right) if there is a
+path (True). All paths have the same weight, i.e., 1.
+
+If the path doesn't exist, return (-1. []).
+"""  # noqa
+
 import heapq
 
 
