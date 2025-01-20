@@ -1,3 +1,32 @@
+"""
+Finding the Shortest Flight Path Using Dijkstra's Algorithm
+Given the flight map of a city, represented as a dictionary, where the key
+represents the name of the airport (as a string) and the corresponding value
+is another dictionary. In the second dictionary, the key represents the name
+of an airport directly reachable from the first airport, and the corresponding
+value represents the air distance (in km) between these two airports.
+Implement Dijkstra’s Algorithm to find the air distance of the shortest path
+between any two given airports. The function should return the corresponding
+distance. It is guaranteed the path from start to end always exists.
+
+For instance:
+
+```python
+graph = {
+    'JFK': {'LAX': 2500, 'MIA': 2000, 'ORD': 1200},
+    'LAX': {'SEA': 2000, 'ORD': 3000},
+    'MIA': {'ORD': 1500, 'ATL': 2000, 'DFW': 1800},
+    'ORD': {'SEA': 2800},
+    'SEA': {},
+    'ATL': {'DFW': 1500},
+    'DFW': {}
+}
+```
+Here, JFK, LAX, MIA, and others are names of airports, and distances are in
+kilometers (km).
+
+"""
+
 import heapq
 
 
