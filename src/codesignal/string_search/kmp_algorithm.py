@@ -8,6 +8,8 @@ texts and the pattern as input, then return a list where each element
 indicates the starting position of the first occurrence of the pattern in the
 corresponding text from the texts list. If the pattern is not present in a
 given text, use -1 as a placeholder.
+
+lps = Longest Prefix Suffix
 """
 
 
@@ -20,11 +22,11 @@ def compute_lps(pattern):
             lps[pointer] = length
             pointer += 1
         else:
-            if length != 0:
-                length = lps[length - 1]
-            else:
+            if length == 0:
                 lps[pointer] = 0
                 pointer += 1
+            else:
+                length = lps[length - 1]
     return lps
 
 
