@@ -1,3 +1,17 @@
+"""
+Sorting Array by Absolute Difference with the Median
+
+You have to sort an array of n integers but with a twist. The task requires
+you to sort the integers according to their absolute difference from the
+median of the array. If two numbers have the same absolute difference from the
+median, the smaller number should be placed first.
+
+Make sure to use a heap to ensure efficient sorting, you are not allowed to
+use built-in methods like sort() or sorted().
+
+The expected time complexity is O(nlogn).
+"""
+
 import heapq
 
 
