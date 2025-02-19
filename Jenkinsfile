@@ -1,25 +1,21 @@
 pipeline {
-    agent {
-        docker {
-            image 'python:3.13.2-alpine3.21'
-        }
-    }
+    agent any
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'pip install --upgrade pip'
-                sh 'pip install -r requirements.txt'
-            }
-        }
-        stage('Run Tests') {
-            steps {
-                sh 'pytest --maxfail=1 --disable-warnings --tb=short'
+                script {
+                    docker.image('python:3.13.2-alpine3.21').inside {
+                        sh 'pip install --upgrade pip'
+                        sh 'pip install -r requirements.txt'
+                        sh 'pytest --maxfail=1 --disable-warnings --tb=short'
+                    }
+                }
             }
         }
     }
     post {
         always {
-            sh 'echo "Pipeline execution finished."'
+            echo "Pipeline execution finished."
         }
     }
 }
